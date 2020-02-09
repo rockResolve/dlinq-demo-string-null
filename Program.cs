@@ -22,12 +22,6 @@ namespace ConsoleApp31ConcatTypes
             
             Console.WriteLine(new string('-', 80));
 
-            var xxx = context.TestTypes.Select("new ("
-                + "String(null),"
-                + "DateTimeOffset ? (null) AS DatetimeProp, "
-                + "Decimal?(null) AS DecimalProp, "
-                + "Int32?(null) AS Id,");
-
             var groupTotalQry = context.TestTypes
                 .GroupBy("1", "it")
 
